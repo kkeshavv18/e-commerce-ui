@@ -23,7 +23,6 @@ const ProductCard = ({ product }: { product: ProductType }) => {
       [type]: value,
     }));
   };
-  console.log("productTypes", productTypes);
   return (
     <div className="shadow-lg rounded-lg overflow-hidden">
       {/* IMAGE  */}
