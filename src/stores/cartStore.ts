@@ -25,7 +25,7 @@ const useCartStore = create<CartStoreStateType & CartStoreActionsType>()(
               ...state.cart,
               {
                 ...item,
-                quantity: 1,
+                quantity: item.quantity || 1,
                 selectedSize: item.selectedSize,
                 selectedColor: item.selectedColor,
               },
